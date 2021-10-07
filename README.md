@@ -1,1 +1,2 @@
-# ra-forms-steps
+# ra-forms-steps [![Build status](https://ci.appveyor.com/api/projects/status/hnv5ukp3ckjarj6q?svg=true)](https://ci.appveyor.com/project/barsich/ra-forms-steps)
+[GithubPages](https://barsich.github.io/ra-forms-steps/)
