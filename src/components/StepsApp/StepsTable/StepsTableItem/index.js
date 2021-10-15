@@ -1,6 +1,6 @@
-export default function StepsTableItem({ item, onItemDelete }) {
+export default function StepsTableItem({ item, onDelete }) {
   const handleDelete = ({ target }) => {
-    onItemDelete(target.closest('.steps-table__item').dataset.id);
+    onDelete(target.closest('.steps-table__item').dataset.id);
   };
   return (
     <tr className="steps-table__item" data-id={item.id}>

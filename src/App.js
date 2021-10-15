@@ -1,11 +1,7 @@
 import React from 'react';
 import './App.css';
-import StepsForm from './components/StepsForm';
+import StepsApp from './components/StepsApp/StepsApp';
 
 export default function App() {
-  return (
-    <div className="container">
-      <StepsForm />
-    </div>
-  );
+  return <StepsApp />;
 }

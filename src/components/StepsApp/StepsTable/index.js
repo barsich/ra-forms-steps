@@ -1,8 +1,8 @@
-import StepsTableItem from '../StepsTableItem';
+import StepsTableItem from './StepsTableItem';
 
-export default function StepsTable({ steps, onItemDelete }) {
+export default function StepsTable({ steps, onDelete }) {
   const sortedSteps = steps
-    .map((item) => <StepsTableItem item={item} key={item.id} onItemDelete={onItemDelete}/>)
+    .map((item) => <StepsTableItem item={item} key={item.id} onDelete={onDelete}/>)
     .sort((a, b) => new Date(b.props.item.date) - new Date(a.props.item.date));
 
   return (
