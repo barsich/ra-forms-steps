@@ -14,7 +14,7 @@ export default function StepsApp() {
       const sameDateItem = prevStepsItems.find((item) => item.date === dateFromForm);
       if (sameDateItem) {
         return prevStepsItems.map((item) =>
-          item.date === dateFromForm ? {...item, distance: item.distance += +distanceFromForm} : item
+          item.date === dateFromForm ? {...item, distance: item.distance + +distanceFromForm} : item
         );
       } else {
         return [

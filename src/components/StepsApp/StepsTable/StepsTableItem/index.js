@@ -1,9 +1,9 @@
 export default function StepsTableItem({ item, onDelete }) {
-  const handleDelete = ({ target }) => {
-    onDelete(target.closest('.steps-table__item').dataset.id);
+  const handleDelete = () => {
+    onDelete(item.id);
   };
   return (
-    <tr className="steps-table__item" data-id={item.id}>
+    <tr className="steps-table__item">
       <td>{new Date(item.date).toLocaleDateString('ru-ru')}</td>
       <td>{item.distance}</td>
       <td>
